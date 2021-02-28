@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:alertbot"
+
+    - path: "app/Main.hs"
+      component: "alertbot:exe:alertbot"
+
+    - path: "test"
+      component: "alertbot:test:alertbot-test"
