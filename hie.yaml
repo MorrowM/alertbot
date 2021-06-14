@@ -1,10 +1,7 @@
 cradle:
   cabal:
-    - path: "src"
-      component: "lib:alertbot"
-
-    - path: "app/Main.hs"
-      component: "alertbot:exe:alertbot"
-
-    - path: "test"
-      component: "alertbot:test:alertbot-test"
+    - path: "alertbot-discord/src/."
+      component: "lib:alertbot-discord"
+      
+    - path: "alertbot-discord/app/."
+      component: "exe:alertbot-discord"

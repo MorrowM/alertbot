@@ -1,10 +1,10 @@
-module Discord.Alertbot.Database where
+module Alertbot.Bot.Database where
 
-import Conduit
-import Control.Monad.Logger (LoggingT, runStdoutLoggingT)
-import Data.Text (Text ())
-import Database.Persist.Sqlite
-import qualified Polysemy as P
+import           Conduit
+import           Control.Monad.Logger    (LoggingT, runStdoutLoggingT)
+import           Data.Text               (Text)
+import           Database.Persist.Sqlite
+import qualified Polysemy                as P
 
 type DatabaseAction a = SqlPersistT (LoggingT (ResourceT IO)) a
 

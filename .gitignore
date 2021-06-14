@@ -1,3 +1,6 @@
-dist-newstyle/
+dist-*/
 *.sqlite
 .vscode/
+bot.json
+bot.yml
+bot.yaml
